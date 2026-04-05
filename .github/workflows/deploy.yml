@@ -25,6 +25,10 @@ jobs:
         uses: actions/checkout@v4
       - name: Setup Pages
         uses: actions/configure-pages@v5
+      - name: Automated Cache Busting
+        run: |
+          sed -i -E "s/styles\.css(\?v=[^\"']*)?/styles.css?v=${{ github.run_id }}/g" index.html
+          sed -i -E "s/script\.js(\?v=[^\"']*)?/script.js?v=${{ github.run_id }}/g" index.html
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
