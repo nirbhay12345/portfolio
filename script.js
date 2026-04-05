@@ -243,8 +243,29 @@ class DataNetwork {
       setTimeout(() => triggerEffect(nameElement), 500);
   }
 
+  // Hamburger Menu Logic
+  function initHamburger() {
+      const hamburger = document.getElementById('hamburger');
+      const navLinks = document.getElementById('nav-links');
+      
+      if (hamburger && navLinks) {
+          hamburger.addEventListener('click', () => {
+              navLinks.classList.toggle('active');
+              hamburger.classList.toggle('toggle');
+          });
+          
+          document.querySelectorAll('.nav-links a').forEach(link => {
+              link.addEventListener('click', () => {
+                  navLinks.classList.remove('active');
+                  hamburger.classList.remove('toggle');
+              });
+          });
+      }
+  }
+
   // Initialize on DOM load
   document.addEventListener('DOMContentLoaded', () => {
+    initHamburger();
     initDecryptAnimation();
     const canvas = document.getElementById('particles');
     if (canvas) {
