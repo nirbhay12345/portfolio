@@ -206,8 +206,46 @@ class DataNetwork {
     setTimeout(type, 1000); // Start delay
   }
 
+  // Name Decrypt Animation
+  function initDecryptAnimation() {
+      const nameElement = document.getElementById("hacker-name");
+      if(!nameElement) return;
+      
+      const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789@#$%^&*";
+      let interval = null;
+
+      function triggerEffect(target) {
+          let iteration = 0;
+          clearInterval(interval);
+          
+          interval = setInterval(() => {
+              target.innerText = target.innerText
+              .split("")
+              .map((letter, index) => {
+                  if(index < iteration) {
+                      return target.dataset.value[index];
+                  }
+                  return letters[Math.floor(Math.random() * 43)];
+              })
+              .join("");
+              
+              if(iteration >= target.dataset.value.length){ 
+              clearInterval(interval);
+              }
+              
+              iteration += 1 / 3;
+          }, 30);
+      }
+      
+      // Trigger on hover
+      nameElement.onmouseover = event => triggerEffect(event.target);
+      // Trigger once on load
+      setTimeout(() => triggerEffect(nameElement), 500);
+  }
+
   // Initialize on DOM load
   document.addEventListener('DOMContentLoaded', () => {
+    initDecryptAnimation();
     const canvas = document.getElementById('particles');
     if (canvas) {
       new DataNetwork(canvas);
