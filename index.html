@@ -3,28 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nirbhay Chaplot | Data & AI Engineer</title>
-    <meta name="description" content="Portfolio of Nirbhay Chaplot, a Software Engineer specializing in modern data stacks, LLM architectures, and intelligent ML pipelines.">
+    <title>Data & AI Engineer Portfolio</title>
+    <meta name="description" content="Portfolio of a Data and AI Engineer specializing in modern data stacks, LLM architectures, and intelligent ML pipelines.">
     <link rel="stylesheet" href="styles.css">
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✧</text></svg>">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧠</text></svg>">
 </head>
 <body>
+    <!-- AI Data architectural grid & effects -->
+    <div class="grid-bg"></div>
+    <div class="bg-glow"></div>
+    <div class="bg-glow-2"></div>
     
-    <!-- Premium Fluid Gradient Background -->
-    <div class="bg-orbs">
-        <div class="orb orb-1"></div>
-        <div class="orb orb-2"></div>
-        <div class="orb orb-3"></div>
+    <div id="canvas-container">
+        <canvas id="particles"></canvas>
     </div>
+
+    <!-- Scanner line overlay for tech feel -->
+    <div class="scanner-line"></div>
 
     <nav>
         <div class="container">
-            <a href="#" class="logo">Nirbhay.</a>
+            <a href="#" class="logo gradient-text">SYS.ROOT <span class="mono">~/portfolio</span></a>
             <div class="nav-links">
-                <a href="#about">About</a>
-                <a href="#experience">Experience</a>
-                <a href="#skills">Capabilities</a>
-                <a href="#projects">Work</a>
+                <a href="#about">[01] ABOUT</a>
+                <a href="#experience">[02] EXP</a>
+                <a href="#skills">[03] SKILLS</a>
+                <a href="#projects">[04] PROJECTS</a>
+                <a href="#contact">[05] COMMS</a>
             </div>
         </div>
     </nav>
@@ -33,13 +38,24 @@
         <section class="hero" id="about">
             <div class="container">
                 <div class="hero-content">
-                    <span class="pill-badge">Available for opportunities</span>
-                    <h1 class="name-animate">Nirbhay Chaplot</h1>
-                    <h2 class="hero-tagline">I engineer <span class="gradient-text">state-of-the-art AI systems</span> and scalable data architectures.</h2>
+                    <span class="hero-subtitle mono">&gt; SYSTEM STATUS: <span style="color: #00ff66;">ONLINE</span></span>
+                    <h1 id="hacker-name" data-value="NIRBHAY CHAPLOT">NIRBHAY CHAPLOT</h1>
+                    <h2 class="hero-tagline">Architecting <span class="gradient-text">Intelligent</span> Data & AI Ecosystems.</h2>
                     
+                    <div class="terminal-box">
+                        <div class="terminal-header">
+                            <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+                            <span class="terminal-title">user@ai-core: ~</span>
+                        </div>
+                        <div class="terminal-body mono">
+                            <span class="prompt">$</span> ./init_profile.sh<br>
+                            <span id="typewriter"></span><span class="cursor"></span>
+                        </div>
+                    </div>
+
                     <div class="hero-btns mt-4">
-                        <a href="#projects" class="btn btn-primary">View My Work</a>
-                        <a href="mailto:nirbhaychaplot010@gmail.com" class="btn btn-outline">Get In Touch</a>
+                        <a href="#experience" class="btn btn-primary hud-bracket">INITIALIZE_EXP</a>
+                        <a href="#projects" class="btn btn-outline hud-bracket">VIEW_MODELS</a>
                     </div>
                 </div>
             </div>
@@ -47,39 +63,49 @@
 
         <section id="experience">
             <div class="container">
-                <h2 class="section-title">Experience</h2>
+                <div class="section-title-wrapper">
+                    <span class="section-tag mono">:: MODULE 02</span>
+                    <h2 class="section-title">Telemetry & Log History</h2>
+                </div>
                 
-                <div class="experience-grid">
+                <div class="experience-timeline">
                     <!-- Armakuni -->
-                    <div class="glass-card">
-                        <div class="exp-header">
-                            <div class="exp-title">
-                                <h4>Senior Data & AI Engineer</h4>
-                                <div class="exp-company">Armakuni</div>
+                    <div class="experience-item">
+                        <div class="experience-card hud-box">
+                            <div class="exp-header">
+                                <div class="exp-title">
+                                    <h4>Senior Data & AI Engineer</h4>
+                                    <div class="exp-company mono">// Armakuni</div>
+                                </div>
+                                <div class="exp-date mono">T-MINUS 0</div>
                             </div>
-                            <div class="exp-date">Recent</div>
+                            <ul class="exp-details">
+                                <li>Engineered production-grade RAG (Retrieval-Augmented Generation) pipelines and deployed enterprise LLM solutions via Vector stores.</li>
+                                <li>Architected resilient data flow frameworks and integrated Temporal workflows for high-reliability ML features and pipelines.</li>
+                                <li>Embedded CI/CD and MLOps paradigms into the AI layer, ensuring robust model deployment and tracking.</li>
+                                <li>Directed engineering squads towards zero-downtime platform architectures and elevated governance protocols for AI data.</li>
+                            </ul>
                         </div>
-                        <ul class="exp-details">
-                            <li>Engineered production-grade RAG (Retrieval-Augmented Generation) pipelines and deployed enterprise LLM solutions via Vector stores.</li>
-                            <li>Architected resilient data flow frameworks and integrated Temporal workflows for high-reliability ML features.</li>
-                            <li>Embedded cutting edge MLOps paradigms into the AI layer, ensuring robust deployment tracking and zero-downtime environments.</li>
-                        </ul>
                     </div>
 
+
+
                     <!-- TCS -->
-                    <div class="glass-card">
-                        <div class="exp-header">
-                            <div class="exp-title">
-                                <h4>Data Engineer</h4>
-                                <div class="exp-company">Tata Consultancy Services (TCS)</div>
+                    <div class="experience-item">
+                        <div class="experience-card hud-box">
+                            <div class="exp-header">
+                                <div class="exp-title">
+                                    <h4>Data Engineer</h4>
+                                    <div class="exp-company mono">// Tata Consultancy Services</div>
+                                </div>
+                                <div class="exp-date mono">T-MINUS 2</div>
                             </div>
-                            <div class="exp-date">Previous</div>
+                            <ul class="exp-details">
+                                <li>Constructed robust ETL/ELT abstraction layers orchestrating massive legacy data migrations to support enterprise analytics.</li>
+                                <li>Prepared clean, structured datasets heavily utilized downstream for model training methodologies and BI reporting.</li>
+                                <li>Automated performance tuning cycles for data warehouse instances, heavily reducing computational overhead.</li>
+                            </ul>
                         </div>
-                        <ul class="exp-details">
-                            <li>Constructed robust ETL/ELT abstraction layers orchestrating massive legacy data migrations to support enterprise analytics.</li>
-                            <li>Prepared clean, structured datasets heavily utilized downstream for model training methodologies and BI reporting.</li>
-                            <li>Automated performance tuning cycles for massive data warehouse instances, heavily reducing computational latency.</li>
-                        </ul>
                     </div>
                 </div>
             </div>
@@ -87,46 +113,53 @@
 
         <section id="skills">
             <div class="container">
-                <h2 class="section-title">Capabilities</h2>
+                <div class="section-title-wrapper">
+                    <span class="section-tag mono">:: MODULE 03</span>
+                    <h2 class="section-title">Core Processing Matrix</h2>
+                </div>
                 
                 <div class="skills-wrapper">
-                    <div class="glass-card skill-category">
-                        <h3>AI Engineering</h3>
+                    <div class="skill-category hud-box">
+                        <div class="data-pulse"></div>
+                        <h3 class="mono">0x01 AI / LLOps</h3>
                         <div class="skill-list">
                             <span class="skill-tag">LLMs & Prompt Eng</span>
                             <span class="skill-tag">RAG Architectures</span>
-                            <span class="skill-tag">LangChain</span>
+                            <span class="skill-tag">LangChain / LlamaIndex</span>
                             <span class="skill-tag">Vector DBs (Pinecone)</span>
                         </div>
                     </div>
 
-                    <div class="glass-card skill-category">
-                        <h3>Data Pipelines</h3>
+                    <div class="skill-category hud-box">
+                        <div class="data-pulse"></div>
+                        <h3 class="mono">0x02 ORCHESTRATION</h3>
                         <div class="skill-list">
                             <span class="skill-tag">Apache Airflow</span>
                             <span class="skill-tag">Temporal</span>
-                            <span class="skill-tag">dbt Core</span>
-                            <span class="skill-tag">ETL/ELT</span>
+                            <span class="skill-tag">dbt (Data Build Tool)</span>
+                            <span class="skill-tag">ETL/ELT Logic</span>
                         </div>
                     </div>
                     
-                    <div class="glass-card skill-category">
-                        <h3>Cloud & Infrastructure</h3>
+                    <div class="skill-category hud-box">
+                        <div class="data-pulse"></div>
+                        <h3 class="mono">0x03 COMPUTE CLOUD</h3>
                         <div class="skill-list">
                             <span class="skill-tag">Databricks</span>
-                            <span class="skill-tag">AWS Cloud</span>
+                            <span class="skill-tag">AWS & SageMaker</span>
                             <span class="skill-tag">Unity Catalog</span>
                             <span class="skill-tag">Snowflake</span>
                         </div>
                     </div>
 
-                    <div class="glass-card skill-category">
-                        <h3>Software & Systems</h3>
+                    <div class="skill-category hud-box">
+                        <div class="data-pulse"></div>
+                        <h3 class="mono">0x04 SYSTAX & DBs</h3>
                         <div class="skill-list">
-                            <span class="skill-tag">Python & PyTorch</span>
-                            <span class="skill-tag">PostgreSQL</span>
-                            <span class="skill-tag">React.js / Node</span>
-                            <span class="skill-tag">CI/CD Automation</span>
+                            <span class="skill-tag">Python (PyTorch)</span>
+                            <span class="skill-tag">PostgreSQL / SQL</span>
+                            <span class="skill-tag">JavaScript / React</span>
+                            <span class="skill-tag">Bash CI/CD</span>
                         </div>
                     </div>
                 </div>
@@ -135,48 +168,73 @@
 
         <section id="projects">
             <div class="container">
-                <h2 class="section-title">Featured Projects</h2>
+                <div class="section-title-wrapper">
+                    <span class="section-tag mono">:: MODULE 04</span>
+                    <h2 class="section-title">Deployed Data & AI Nodes</h2>
+                </div>
                 
                 <div class="projects-grid">
-                    <div class="glass-card project-card">
-                        <div class="project-icon">✦</div>
-                        <h3>Intelligent RAG Network</h3>
-                        <p>Architected a context-aware Agent network utilizing LangChain and Vector Databases. Enabled automated, dynamic querying over deeply un-structured corporate data.</p>
+                    <div class="project-card hud-box">
+                        <div class="card-scanline"></div>
+                        <div class="project-icon mono text-green">[ R ]</div>
+                        <h3>Intelligent RAG Knowledge Base</h3>
+                        <p>Architected a context-aware Agent network utilizing LangChain and Vector Databases. Enabled dynamic querying over highly compartmentalized corporate data utilizing Retrieval-Augmented Generation.</p>
                         <div class="project-tech">
                             <span>LangChain</span>
                             <span>OpenAI</span>
-                            <span>Vector Store</span>
+                            <span>Vector DB</span>
+                            <span>Python</span>
                         </div>
                         <div class="project-links">
-                            <a href="#">Explore Integration →</a>
+                            <a href="#" aria-label="Access Code">EXECUTE ↗</a>
                         </div>
                     </div>
 
-                    <div class="glass-card project-card">
-                        <div class="project-icon">⟡</div>
+                    <div class="project-card hud-box">
+                        <div class="card-scanline"></div>
+                        <div class="project-icon mono text-cyan">[ M ]</div>
                         <h3>Marketing Analytics Hub</h3>
-                        <p>Constructed a portable infrastructure blueprint connecting dbt, Airflow, and AWS. Synthesized raw disparate streams into unified, high-integrity models.</p>
+                        <p>Constructed a portable infrastructure blueprint connecting dbt, Airflow, and AWS. Synthesized raw disparate streams into unified, high-integrity marketing analytical models.</p>
                         <div class="project-tech">
                             <span>dbt</span>
                             <span>Airflow</span>
                             <span>AWS IaaS</span>
+                            <span>Data Lake</span>
                         </div>
                         <div class="project-links">
-                            <a href="#">Explore Architecture →</a>
+                            <a href="#" aria-label="Access Code">EXECUTE ↗</a>
                         </div>
                     </div>
 
-                    <div class="glass-card project-card">
-                        <div class="project-icon">✧</div>
-                        <h3>Unity Catalog IAM</h3>
-                        <p>Automated Databricks access controls via CI/CD parsing YAML definitions. Forged intricate revocation logic ensuring drift-free data security and compliance.</p>
+                    <div class="project-card hud-box">
+                        <div class="card-scanline"></div>
+                        <div class="project-icon mono text-purple">[ U ]</div>
+                        <h3>Unity Catalog IAM Sync</h3>
+                        <p>Automated Databricks access controls via CI/CD parsing YAML definitions. Forged intricate revocation logic ensuring drift-free data platform security models.</p>
                         <div class="project-tech">
                             <span>Databricks</span>
                             <span>Unity Catalog</span>
-                            <span>Security</span>
+                            <span>GH Actions</span>
+                            <span>Permissions</span>
                         </div>
                         <div class="project-links">
-                            <a href="#">Explore Repo →</a>
+                            <a href="#" aria-label="Access Code">EXECUTE ↗</a>
+                        </div>
+                    </div>
+
+                    <div class="project-card hud-box">
+                        <div class="card-scanline"></div>
+                        <div class="project-icon mono text-green">[ Q ]</div>
+                        <h3>Task Telemetry App</h3>
+                        <p>Quest Tracker: A stateful full-stack application enabling CRUD actions overlaying a PostgreSQL backbone. Orchestrated secure API entry points via OAuth.</p>
+                        <div class="project-tech">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>PostgreSQL</span>
+                            <span>OAuth</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" aria-label="Access Code">EXECUTE ↗</a>
                         </div>
                     </div>
                 </div>
@@ -185,10 +243,13 @@
 
         <section id="contact" class="contact-section">
             <div class="container">
-                <div class="glass-card contact-box">
-                    <h2>Ready to Build?</h2>
-                    <p>I frequently partner with teams to scale up intelligent data pipelines and deploy bleeding-edge AI functionality. Let's discuss your architectural needs.</p>
-                    <a href="mailto:nirbhaychaplot010@gmail.com" class="btn btn-primary">Start a Conversation</a>
+                <div class="contact-box hud-box">
+                    <div class="corner-tl"></div><div class="corner-tr"></div>
+                    <div class="corner-bl"></div><div class="corner-br"></div>
+                    
+                    <h2 class="mono"><span class="gradient-text">ESTABLISH_UPLINK</span></h2>
+                    <p>My neural clusters are currently accepting new connections.<br>Reach out to discuss Large Language Models, AI pipelines, or data architectural revamps.</p>
+                    <a href="mailto:nirbhaychaplot010@gmail.com" class="btn btn-primary hud-bracket">TRANSMIT PACKET</a>
                 </div>
             </div>
         </section>
@@ -196,7 +257,8 @@
 
     <footer>
         <div class="container">
-            <p>© 2026 Nirbhay Chaplot. Crafted with precision.</p>
+            <div class="data-stream-footer"></div>
+            <p class="mono">SYSTEM_HALT: END OF STREAM. © 2026 DE_AI_PORTFOLIO_V3</p>
         </div>
     </footer>
 
